@@ -1,14 +1,7 @@
-# Snake
+# Serpentine (2016-present)
 
-This project focuses on the AI algorithm of the snake game. The AI's goal is to direct the snake to eat the food and fill the map with its body as quickly as possible, so it **should not** just follow a fixed pattern (e.g., zigzagging).
+AI algorithms for Snake. The  goal is to manuever  the snake to eat the food and fill the map with its body as quickly as possible, so it **should not** just follow a fixed pattern
 
-There are some pertinent discussions [here](https://www.reddit.com/r/programming/comments/5ly972/ai_algorithm_of_snake_game_share_opinions_if_you/).
-
-## Build Status
-
-| Linux | Windows |
-|:-----:|:-------:|
-|[![Build Status](https://travis-ci.org/chuyangliu/Snake.svg?branch=dev_refactor)](https://travis-ci.org/chuyangliu/Snake)|[![Build status](https://ci.appveyor.com/api/projects/status/d4agff8ef7d9tfxh/branch/master?svg=true)](https://ci.appveyor.com/project/chuyangliu/snake/branch/master)|
 
 ## Demo
 
@@ -24,19 +17,6 @@ There are some pertinent discussions [here](https://www.reddit.com/r/programming
 
 1. Install [CMake](https://cmake.org/download/).
 
-2. Generate build files using the commands below:
-
-    ```bash
-    $ mkdir build
-    $ cd build
-    $ cmake ..
-    ```
-
-3. Build files will be generated in the `build` directory based on your operating system. Use them to build this project:
-
-    | Linux | OS X | Windows |
-    |:-----:|:----:|:-------:|
-    |Makefile|Makefile|Visual Studio Project|
 
 ## Keyboard Controls
 
@@ -121,6 +101,4 @@ To find snake **S1**'s next moving direction **D**, the AI follows the steps bel
 4. Compute the longest path **P3** from snake **S1**'s head to its tail. If **P3** exists, let **D** be the first direction in path **P3**. Otherwise, go to step 5.
 5. Let **D** be the direction that makes the snake the farthest from the food.
 
-## License
 
-See the [LICENSE](./LICENSE) file for license rights and limitations.
